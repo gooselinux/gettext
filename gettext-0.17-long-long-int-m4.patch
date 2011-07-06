@@ -1,0 +1,13 @@
+diff -up ./gettext-runtime/libasprintf/configure.ac.rpathFix~ ./gettext-runtime/libasprintf/configure.ac
+--- ./gettext-runtime/libasprintf/configure.ac.~	2007-10-08 05:37:36.000000000 +1000
++++ ./gettext-runtime/libasprintf/configure.ac	2008-08-28 16:43:18.000000000 +1000
+@@ -54,7 +54,8 @@ dnl Checks for header files.
+ dnl Checks for typedefs, structures, and compiler characteristics.
+ AC_C_INLINE
+ AC_TYPE_SIZE_T
+-gl_AC_TYPE_LONG_LONG
++AC_TYPE_LONG_LONG_INT
++#gl_AC_TYPE_LONG_LONG
+ gt_TYPE_LONGDOUBLE
+ gt_TYPE_WCHAR_T
+ gt_TYPE_WINT_T
